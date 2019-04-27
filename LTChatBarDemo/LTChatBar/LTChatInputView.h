@@ -8,25 +8,6 @@
 
 #import <UIKit/UIKit.h>
 #import "LTRecordView.h"
-
-typedef NS_ENUM(NSUInteger, LTChatBarStatus) {
-    LTChatBarStatusNone = 0,    //  无状态
-    LTChatBarStatusVoice,       //  语音
-    LTChatBarStatusEmoji,       //  表情
-    LTChatBarStatusMore,        //  更多
-    LTChatBarStatusKeyboard     //  键盘
-};
-
-typedef NS_ENUM(NSUInteger, LTChatBarRecordStatus) {
-    LTChatBarRecordStatusNone   =   0,  //  初始状态
-    LTChatBarRecordStatusRecording,     //  正在录音
-    LTChatBarRecordStatusMoveOutSide,   //  移出
-    LTChatBarRecordStatusMoveInSide,    //  移进
-    LTChatBarRecordStatusCancel,        //  上滑取消录音
-    LTChatBarRecordStatusEnd,           //  录音结束
-    LTChatBarRecordStatusToolShot       //  录音太短
-};
-
 #import "LTChatInputViewDelegate.h"
 
 @interface LTChatInputView : UIView

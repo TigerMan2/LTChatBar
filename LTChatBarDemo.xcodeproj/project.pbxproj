@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		181D1D3B2274A054008A659E /* LTChatEmojiMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = 181D1D3A2274A054008A659E /* LTChatEmojiMenuView.m */; };
+		181D1D3E2274A4CE008A659E /* icon_inputBox_menu_add@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 181D1D3D2274A4CE008A659E /* icon_inputBox_menu_add@3x.png */; };
 		AA099AF0227294DD001BEA74 /* KSystemAuthorization.m in Sources */ = {isa = PBXBuildFile; fileRef = AA099AEF227294DD001BEA74 /* KSystemAuthorization.m */; };
 		AA099AF42272CF65001BEA74 /* LTEmojiModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AA099AF32272CF65001BEA74 /* LTEmojiModel.m */; };
 		AA099AF72272D670001BEA74 /* LTRecordView.m in Sources */ = {isa = PBXBuildFile; fileRef = AA099AF62272D670001BEA74 /* LTRecordView.m */; };
@@ -49,6 +51,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		181D1D392274A054008A659E /* LTChatEmojiMenuView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LTChatEmojiMenuView.h; sourceTree = "<group>"; };
+		181D1D3A2274A054008A659E /* LTChatEmojiMenuView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LTChatEmojiMenuView.m; sourceTree = "<group>"; };
+		181D1D3C2274A296008A659E /* LTChatBarHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LTChatBarHeader.h; sourceTree = "<group>"; };
+		181D1D3D2274A4CE008A659E /* icon_inputBox_menu_add@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon_inputBox_menu_add@3x.png"; path = "../../../../RChat/RChat/Messages/InputBox/Resource/icon_inputBox_menu_add@3x.png"; sourceTree = "<group>"; };
 		AA099AEE227294DD001BEA74 /* KSystemAuthorization.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KSystemAuthorization.h; sourceTree = "<group>"; };
 		AA099AEF227294DD001BEA74 /* KSystemAuthorization.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KSystemAuthorization.m; sourceTree = "<group>"; };
 		AA099AF12272CBBB001BEA74 /* LTChatInputViewDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LTChatInputViewDelegate.h; sourceTree = "<group>"; };
@@ -194,6 +200,9 @@
 				AA099AF32272CF65001BEA74 /* LTEmojiModel.m */,
 				AA099AF52272D670001BEA74 /* LTRecordView.h */,
 				AA099AF62272D670001BEA74 /* LTRecordView.m */,
+				181D1D392274A054008A659E /* LTChatEmojiMenuView.h */,
+				181D1D3A2274A054008A659E /* LTChatEmojiMenuView.m */,
+				181D1D3C2274A296008A659E /* LTChatBarHeader.h */,
 			);
 			path = LTChatBar;
 			sourceTree = "<group>";
@@ -201,6 +210,7 @@
 		AA0C41D32271B1E800FD6FBE /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				181D1D3D2274A4CE008A659E /* icon_inputBox_menu_add@3x.png */,
 				AA0C41DC2271B27F00FD6FBE /* icon_message_voiceBtn@3x.png */,
 				AA0C41DA2271B27900FD6FBE /* icon_message_expression@3x.png */,
 				AA0C41D82271B27400FD6FBE /* icon_message_keyboard@3x.png */,
@@ -318,6 +328,7 @@
 				AA0C41D52271B25E00FD6FBE /* icon_inputBox_menu_add@3x.png in Resources */,
 				AA0C41A12271A9A000FD6FBE /* LaunchScreen.storyboard in Resources */,
 				AA0C419E2271A9A000FD6FBE /* Assets.xcassets in Resources */,
+				181D1D3E2274A4CE008A659E /* icon_inputBox_menu_add@3x.png in Resources */,
 				AA0C41D92271B27400FD6FBE /* icon_message_keyboard@3x.png in Resources */,
 				AA0C419C2271A99F00FD6FBE /* Main.storyboard in Resources */,
 				AA0C41D72271B26B00FD6FBE /* icon_message_more@3x.png in Resources */,
@@ -354,6 +365,7 @@
 				AA0C41E32271BA7A00FD6FBE /* UIColor+LT.m in Sources */,
 				AA099AF72272D670001BEA74 /* LTRecordView.m in Sources */,
 				AA0C41A42271A9A000FD6FBE /* main.m in Sources */,
+				181D1D3B2274A054008A659E /* LTChatEmojiMenuView.m in Sources */,
 				AA0C41962271A99F00FD6FBE /* AppDelegate.m in Sources */,
 				AA0C41D22271AE4D00FD6FBE /* LTChatEmojiView.m in Sources */,
 				AA0C41C92271A9CA00FD6FBE /* LTChatBar.m in Sources */,

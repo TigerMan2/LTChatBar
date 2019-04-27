@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import "LTChatEmojiView.h"
+#import "LTChatBarHeader.h"
 
 @class LTEmojiModel;
 @class LTChatInputView;

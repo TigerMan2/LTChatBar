@@ -11,28 +11,6 @@
 #import "UIColor+LT.h"
 #import "KSystemAuthorization.h"
 
-#define kWIDTH  [UIScreen mainScreen].bounds.size.width
-#define kHEIGHT [UIScreen mainScreen].bounds.size.height
-// 判断是否iPhone X
-#define IS_iPhoneX ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(1125, 2436), [[UIScreen mainScreen] currentMode].size) : NO)
-//底部间距
-#define bottomSpace (IS_iPhoneX ? 44 + 10 : 10)
-// 输入框与父视图的间隔
-#define CHATBAR_BACKGROUND_SPACE 8
-// 输入框高度
-#define CHATBAR_HEIGHT 49
-// 输入框字体颜色
-#define CHATBAR_TEXTCOLOR [UIColor darkGrayColor]
-// 输入字体大小
-#define CHATBAR_TEXT_FONT 15
-// 输入框最大高度
-#define CHATBAR_TEXT_MAX_HEIGHT 104
-// 输入文本框的默认高度
-#define CHATBAR_TEXT_MIN_HEIGHT 34
-
-#define  kTabbarSafeBottomMargin            (IS_iPhoneX ? 34.f : 0.f)
-#define  kTabbarHeight                      (IS_iPhoneX ? 83.f : 49.f)
-
 
 @interface LTChatInputView () <UITextViewDelegate,LTChatInputViewDelegate>
 {

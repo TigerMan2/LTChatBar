@@ -24,13 +24,16 @@
 		AA0C41CC2271AE3100FD6FBE /* LTChatInputView.m in Sources */ = {isa = PBXBuildFile; fileRef = AA0C41CB2271AE3100FD6FBE /* LTChatInputView.m */; };
 		AA0C41CF2271AE3C00FD6FBE /* LTChatMoreView.m in Sources */ = {isa = PBXBuildFile; fileRef = AA0C41CE2271AE3C00FD6FBE /* LTChatMoreView.m */; };
 		AA0C41D22271AE4D00FD6FBE /* LTChatEmojiView.m in Sources */ = {isa = PBXBuildFile; fileRef = AA0C41D12271AE4D00FD6FBE /* LTChatEmojiView.m */; };
-		AA0C41D52271B25E00FD6FBE /* icon_inputBox_menu_add@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = AA0C41D42271B25E00FD6FBE /* icon_inputBox_menu_add@3x.png */; };
 		AA0C41D72271B26B00FD6FBE /* icon_message_more@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = AA0C41D62271B26B00FD6FBE /* icon_message_more@3x.png */; };
 		AA0C41D92271B27400FD6FBE /* icon_message_keyboard@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = AA0C41D82271B27400FD6FBE /* icon_message_keyboard@3x.png */; };
 		AA0C41DB2271B27900FD6FBE /* icon_message_expression@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = AA0C41DA2271B27900FD6FBE /* icon_message_expression@3x.png */; };
 		AA0C41DD2271B27F00FD6FBE /* icon_message_voiceBtn@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = AA0C41DC2271B27F00FD6FBE /* icon_message_voiceBtn@3x.png */; };
 		AA0C41E02271B3A900FD6FBE /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = AA0C41DF2271B3A900FD6FBE /* UIView+Frame.m */; };
 		AA0C41E32271BA7A00FD6FBE /* UIColor+LT.m in Sources */ = {isa = PBXBuildFile; fileRef = AA0C41E22271BA7A00FD6FBE /* UIColor+LT.m */; };
+		AACC54AC227597FD00B84C3E /* LTEmojiGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = AACC54AB227597FD00B84C3E /* LTEmojiGroup.m */; };
+		AACC54AE22759C5700B84C3E /* normal_emoji.plist in Resources */ = {isa = PBXBuildFile; fileRef = AACC54AD22759C5700B84C3E /* normal_emoji.plist */; };
+		AACC54B12275A65D00B84C3E /* LTHorizontalPageFlowlayout.m in Sources */ = {isa = PBXBuildFile; fileRef = AACC54B02275A65D00B84C3E /* LTHorizontalPageFlowlayout.m */; };
+		AACC54B42275B5F700B84C3E /* LTEmojiCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AACC54B32275B5F700B84C3E /* LTEmojiCollectionViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -86,7 +89,6 @@
 		AA0C41CE2271AE3C00FD6FBE /* LTChatMoreView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LTChatMoreView.m; sourceTree = "<group>"; };
 		AA0C41D02271AE4D00FD6FBE /* LTChatEmojiView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LTChatEmojiView.h; sourceTree = "<group>"; };
 		AA0C41D12271AE4D00FD6FBE /* LTChatEmojiView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LTChatEmojiView.m; sourceTree = "<group>"; };
-		AA0C41D42271B25E00FD6FBE /* icon_inputBox_menu_add@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_inputBox_menu_add@3x.png"; sourceTree = "<group>"; };
 		AA0C41D62271B26B00FD6FBE /* icon_message_more@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_message_more@3x.png"; sourceTree = "<group>"; };
 		AA0C41D82271B27400FD6FBE /* icon_message_keyboard@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_message_keyboard@3x.png"; sourceTree = "<group>"; };
 		AA0C41DA2271B27900FD6FBE /* icon_message_expression@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_message_expression@3x.png"; sourceTree = "<group>"; };
@@ -95,6 +97,13 @@
 		AA0C41DF2271B3A900FD6FBE /* UIView+Frame.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+Frame.m"; sourceTree = "<group>"; };
 		AA0C41E12271BA7A00FD6FBE /* UIColor+LT.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+LT.h"; sourceTree = "<group>"; };
 		AA0C41E22271BA7A00FD6FBE /* UIColor+LT.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+LT.m"; sourceTree = "<group>"; };
+		AACC54AA227597FD00B84C3E /* LTEmojiGroup.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LTEmojiGroup.h; sourceTree = "<group>"; };
+		AACC54AB227597FD00B84C3E /* LTEmojiGroup.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LTEmojiGroup.m; sourceTree = "<group>"; };
+		AACC54AD22759C5700B84C3E /* normal_emoji.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = normal_emoji.plist; sourceTree = "<group>"; };
+		AACC54AF2275A65D00B84C3E /* LTHorizontalPageFlowlayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LTHorizontalPageFlowlayout.h; sourceTree = "<group>"; };
+		AACC54B02275A65D00B84C3E /* LTHorizontalPageFlowlayout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LTHorizontalPageFlowlayout.m; sourceTree = "<group>"; };
+		AACC54B22275B5F700B84C3E /* LTEmojiCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LTEmojiCollectionViewCell.h; sourceTree = "<group>"; };
+		AACC54B32275B5F700B84C3E /* LTEmojiCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LTEmojiCollectionViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -189,6 +198,10 @@
 				AA0C41CE2271AE3C00FD6FBE /* LTChatMoreView.m */,
 				AA0C41D02271AE4D00FD6FBE /* LTChatEmojiView.h */,
 				AA0C41D12271AE4D00FD6FBE /* LTChatEmojiView.m */,
+				AACC54AF2275A65D00B84C3E /* LTHorizontalPageFlowlayout.h */,
+				AACC54B02275A65D00B84C3E /* LTHorizontalPageFlowlayout.m */,
+				AACC54B22275B5F700B84C3E /* LTEmojiCollectionViewCell.h */,
+				AACC54B32275B5F700B84C3E /* LTEmojiCollectionViewCell.m */,
 				AA0C41DE2271B3A900FD6FBE /* UIView+Frame.h */,
 				AA0C41DF2271B3A900FD6FBE /* UIView+Frame.m */,
 				AA0C41E12271BA7A00FD6FBE /* UIColor+LT.h */,
@@ -203,6 +216,9 @@
 				181D1D392274A054008A659E /* LTChatEmojiMenuView.h */,
 				181D1D3A2274A054008A659E /* LTChatEmojiMenuView.m */,
 				181D1D3C2274A296008A659E /* LTChatBarHeader.h */,
+				AACC54AA227597FD00B84C3E /* LTEmojiGroup.h */,
+				AACC54AB227597FD00B84C3E /* LTEmojiGroup.m */,
+				AACC54AD22759C5700B84C3E /* normal_emoji.plist */,
 			);
 			path = LTChatBar;
 			sourceTree = "<group>";
@@ -215,7 +231,6 @@
 				AA0C41DA2271B27900FD6FBE /* icon_message_expression@3x.png */,
 				AA0C41D82271B27400FD6FBE /* icon_message_keyboard@3x.png */,
 				AA0C41D62271B26B00FD6FBE /* icon_message_more@3x.png */,
-				AA0C41D42271B25E00FD6FBE /* icon_inputBox_menu_add@3x.png */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -325,13 +340,13 @@
 			files = (
 				AA0C41DD2271B27F00FD6FBE /* icon_message_voiceBtn@3x.png in Resources */,
 				AA0C41DB2271B27900FD6FBE /* icon_message_expression@3x.png in Resources */,
-				AA0C41D52271B25E00FD6FBE /* icon_inputBox_menu_add@3x.png in Resources */,
 				AA0C41A12271A9A000FD6FBE /* LaunchScreen.storyboard in Resources */,
 				AA0C419E2271A9A000FD6FBE /* Assets.xcassets in Resources */,
 				181D1D3E2274A4CE008A659E /* icon_inputBox_menu_add@3x.png in Resources */,
 				AA0C41D92271B27400FD6FBE /* icon_message_keyboard@3x.png in Resources */,
 				AA0C419C2271A99F00FD6FBE /* Main.storyboard in Resources */,
 				AA0C41D72271B26B00FD6FBE /* icon_message_more@3x.png in Resources */,
+				AACC54AE22759C5700B84C3E /* normal_emoji.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -357,9 +372,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				AA0C41E02271B3A900FD6FBE /* UIView+Frame.m in Sources */,
+				AACC54B42275B5F700B84C3E /* LTEmojiCollectionViewCell.m in Sources */,
 				AA099AF42272CF65001BEA74 /* LTEmojiModel.m in Sources */,
 				AA0C41992271A99F00FD6FBE /* ViewController.m in Sources */,
 				AA0C41CF2271AE3C00FD6FBE /* LTChatMoreView.m in Sources */,
+				AACC54AC227597FD00B84C3E /* LTEmojiGroup.m in Sources */,
 				AA0C41CC2271AE3100FD6FBE /* LTChatInputView.m in Sources */,
 				AA099AF0227294DD001BEA74 /* KSystemAuthorization.m in Sources */,
 				AA0C41E32271BA7A00FD6FBE /* UIColor+LT.m in Sources */,
@@ -368,6 +385,7 @@
 				181D1D3B2274A054008A659E /* LTChatEmojiMenuView.m in Sources */,
 				AA0C41962271A99F00FD6FBE /* AppDelegate.m in Sources */,
 				AA0C41D22271AE4D00FD6FBE /* LTChatEmojiView.m in Sources */,
+				AACC54B12275A65D00B84C3E /* LTHorizontalPageFlowlayout.m in Sources */,
 				AA0C41C92271A9CA00FD6FBE /* LTChatBar.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

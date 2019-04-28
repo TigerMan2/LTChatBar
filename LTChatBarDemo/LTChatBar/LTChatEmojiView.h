@@ -7,12 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
-
-typedef NS_ENUM(NSUInteger, LTEmojiType) {
-    LTEmojiTypeNormal,
-    LTEmojiTypeGif
-};
+#import "LTChatEmojiMenuView.h"
 
 @interface LTChatEmojiView : UIView
+
+@property (nonatomic, weak) id <LTChatInputViewDelegate> delegate;
+/** 表情菜单 */
+@property (nonatomic, strong) LTChatEmojiMenuView *menuView;
 
 @end

@@ -6,6 +6,8 @@
 //  Copyright © 2019 mrstock. All rights reserved.
 //
 
+#import <UIKit/UIKit.h>
+
 #ifndef LTChatBarHeader_h
 #define LTChatBarHeader_h
 
@@ -27,12 +29,31 @@
 #define CHATBAR_TEXT_MAX_HEIGHT 104
 // 输入文本框的默认高度
 #define CHATBAR_TEXT_MIN_HEIGHT 34
+// 表情框高度
+#define CHATBAR_EMOJI_VIEW_HEIGHT 215
+#define CHATBAR_EMOJI_HEIGHT 141
 
 #define  kTabbarSafeBottomMargin            (IS_iPhoneX ? 34.f : 0.f)
 #define  kTabbarHeight                      (IS_iPhoneX ? 83.f : 49.f)
 
+// 常规表情一行能显示的个数
+#define NORMARL_EMOJI_ROW_COUNT kWIDTH >= 375 ? 8 : 7
+
+// 对于block的弱引用
+#define kWeakSelf           __weak __typeof(self)weakSelf = self;
+
 // 菜单表情高度
 static const CGFloat  MENU_EMOJI_ITEM_HEIGHT = 44;
+// item宽度
+static const CGFloat ITEM_WIDTH = 40;
+// item高度
+static const CGFloat ITEM_HEIGHT = 40;
+
+static const CGFloat krowSpacing = 5;
+// 动画表情一行能显示的个数
+static const CGFloat GIF_EMOJI_ROW_COUNT = 4;
+
+
 
 typedef NS_ENUM(NSUInteger, LTChatBarStatus) {
     LTChatBarStatusNone = 0,    //  无状态
@@ -50,6 +71,11 @@ typedef NS_ENUM(NSUInteger, LTChatBarRecordStatus) {
     LTChatBarRecordStatusCancel,        //  上滑取消录音
     LTChatBarRecordStatusEnd,           //  录音结束
     LTChatBarRecordStatusToolShot       //  录音太短
+};
+
+typedef NS_ENUM(NSUInteger, LTEmojiType) {
+    LTEmojiTypeNormal,
+    LTEmojiTypeGif
 };
 
 

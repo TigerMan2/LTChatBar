@@ -7,12 +7,14 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "LTChatEmojiView.h"
 #import "LTChatBarHeader.h"
 
 @class LTEmojiModel;
 @class LTChatInputView;
 @class LTChatMoreView;
+@class LTChatEmojiMenuView;
+@class LTEmojiGroup;
+@class LTChatEmojiView;
 
 @protocol LTChatInputViewDelegate <NSObject>
 
@@ -40,6 +42,34 @@
  */
 - (void)emojiView:(LTChatEmojiView *)emojiView
         sendEmoji:(NSString *)emoji;
+
+#pragma mark - 表情菜单代理
+
+/**
+ 点击添加表情按钮
+
+ @param menuView 表情菜单
+ @param addButton 点击按钮
+ */
+- (void)emojiMenuView:(LTChatEmojiMenuView *)menuView clickAddAction:(UIButton *)addButton;
+
+/**
+ 选择表情组
+ 
+ @param menuView 表情菜单页面
+ @param emojiGroup 表情组
+ */
+- (void)emojiMenuView:(LTChatEmojiMenuView *)menuView
+  didSelectEmojiGroup:(LTEmojiGroup *)emojiGroup;
+
+/**
+ 点击发送按钮，发送表情
+ 
+ @param menuView 表情菜单
+ @param sendButton 发送按钮
+ */
+- (void)emojiMenuView:(LTChatEmojiMenuView *)menuView
+            sendEmoji:(UIButton *)sendButton;
 
 #pragma mark - 输入框代理部分
 

@@ -14,7 +14,7 @@
 #define kWIDTH  [UIScreen mainScreen].bounds.size.width
 #define kHEIGHT [UIScreen mainScreen].bounds.size.height
 // 判断是否iPhone X
-#define IS_iPhoneX ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(1125, 2436), [[UIScreen mainScreen] currentMode].size) : NO)
+#define IS_iPhoneX ([[UIScreen mainScreen] bounds].size.height >= 812)
 //底部间距
 #define bottomSpace (IS_iPhoneX ? 44 + 10 : 10)
 // 输入框与父视图的间隔
@@ -35,6 +35,14 @@
 
 // 输入框更多视图高度
 #define CHATBAR_MORE_VIEW_HEIGHT 215
+// item之间的横线间隔
+#define CHATBAR_MORE_ITEM_H_INTERVAL 15
+// item的宽度
+#define CHATBAR_MORE_ITEM_WIDTH 60
+// item之间的纵向间隔
+#define CHATBAR_MORE_ITEM_V_INTERVAL (kWIDTH - 4 * CHATBAR_MORE_ITEM_WIDTH)/5.f
+
+#define CHATBAR_MORE_ITEM_HEIGHT (CHATBAR_MORE_VIEW_HEIGHT - 10 - 2 * CHATBAR_MORE_ITEM_H_INTERVAL) / 2.f
 
 #define  kTabbarSafeBottomMargin            (IS_iPhoneX ? 34.f : 0.f)
 #define  kTabbarHeight                      (IS_iPhoneX ? 83.f : 49.f)

@@ -211,11 +211,11 @@
 
 /** 输入表情 */
 - (void)clickEmojiAction:(UIButton *)sender {
-    LTChatBarStatus lastStauts = self.keyboardStatus;
-    if (lastStauts != LTChatBarStatusEmoji) {
+    LTChatBarStatus lastStatus = self.keyboardStatus;
+    if (lastStatus != LTChatBarStatusEmoji) {
         self.keyboardStatus = LTChatBarStatusEmoji;
         
-        if (lastStauts == LTChatBarStatusKeyboard) {
+        if (lastStatus == LTChatBarStatusKeyboard) {
             [self.inputView resignFirstResponder];
         }
         
@@ -231,7 +231,7 @@
         [self textViewDidChange:self.inputView];
         
         if (self.delegate && [self.delegate respondsToSelector:@selector(inputView:changeKeyboardStatus:nowStatus:)]) {
-            [self.delegate inputView:self changeKeyboardStatus:lastStauts nowStatus:LTChatBarStatusEmoji];
+            [self.delegate inputView:self changeKeyboardStatus:lastStatus nowStatus:LTChatBarStatusEmoji];
             //最后的状态是显示键盘，需要先收起键盘
         }
     } else {
@@ -242,7 +242,7 @@
         [self.emojiButton setImage:[UIImage imageNamed:@"icon_message_expression"] forState:UIControlStateNormal];
         
         if (self.delegate && [self.delegate respondsToSelector:@selector(inputView:changeKeyboardStatus:nowStatus:)]) {
-            [self.delegate inputView:self changeKeyboardStatus:lastStauts nowStatus:LTChatBarStatusKeyboard];
+            [self.delegate inputView:self changeKeyboardStatus:lastStatus nowStatus:LTChatBarStatusKeyboard];
         }
     }
 }
@@ -264,6 +264,16 @@
         
         if (self.delegate && [self.delegate respondsToSelector:@selector(inputView:changeKeyboardStatus:nowStatus:)]) {
             [self.delegate inputView:self changeKeyboardStatus:lastStatus nowStatus:LTChatBarStatusMore];
+        }
+    } else {
+        self.keyboardStatus = LTChatBarStatusKeyboard;
+        
+        [self.inputView becomeFirstResponder];
+        
+        [self.emojiButton setImage:[UIImage imageNamed:@"icon_message_expression"] forState:UIControlStateNormal];
+        
+        if (self.delegate && [self.delegate respondsToSelector:@selector(inputView:changeKeyboardStatus:nowStatus:)]) {
+            [self.delegate inputView:self changeKeyboardStatus:lastStatus nowStatus:LTChatBarStatusKeyboard];
         }
     }
 }

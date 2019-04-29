@@ -8,7 +8,7 @@
 
 #import "ViewController.h"
 #import "LTChatBar/LTChatBar.h"
-#import "LTChatBar/UIView+Frame.h"
+#import "UIView+Frame.h"
 
 @interface ViewController () <LTChatBarDelegate>
 
@@ -34,6 +34,14 @@
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
     [self.view endEditing:YES];
+}
+
+- (void)chatBar:(LTChatBar *)chatBar sendMessage:(NSString *)message {
+    NSLog(@"发送的文字---%@",message);
+}
+
+- (void)chatBar:(LTChatBar *)chatBar sendEmoji:(NSString *)emoji {
+    NSLog(@"发送的表情---%@",emoji);
 }
 
 

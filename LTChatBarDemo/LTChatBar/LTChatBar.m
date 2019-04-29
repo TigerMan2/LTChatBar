@@ -74,9 +74,9 @@
     
     self.inputView.lt_h = self.inputView.curHeight;
     if (self.inputView.keyboardStatus == LTChatBarStatusEmoji) {
-        self.emojiView.lt_h = self.inputView.curHeight;
+        self.emojiView.lt_y = self.inputView.curHeight;
     } else if (self.inputView.keyboardStatus == LTChatBarStatusMore) {
-        self.moreView.lt_h = self.inputView.curHeight;
+        self.moreView.lt_y = self.inputView.curHeight;
     }
 }
 
@@ -163,7 +163,7 @@
         case LTChatBarStatusEmoji:
         {
             if (oldStatus == LTChatBarStatusVoice || oldStatus == LTChatBarStatusNone) {
-                [self.emojiView setLt_h:self.inputView.curHeight - kTabbarSafeBottomMargin];
+                [self.emojiView setLt_y:self.inputView.curHeight - kTabbarSafeBottomMargin];
                 //添加表情
                 BOOL noEmpty = self.inputView.inputView.text.length > 0;
                 [self addSubview:self.emojiView];
@@ -186,7 +186,7 @@
                 [self addSubview:self.emojiView];
                 
                 [UIView animateWithDuration:0.15 animations:^{
-                    self.emojiView.lt_h = self.inputView.curHeight;
+                    self.emojiView.lt_y = self.inputView.curHeight;
                 } completion:^(BOOL finished) {
                     [self.moreView removeFromSuperview];
                 }];
@@ -203,7 +203,7 @@
         case LTChatBarStatusMore:
         {
             if (oldStatus == LTChatBarStatusVoice || oldStatus == LTChatBarStatusNone) {
-                [self.moreView setLt_h:self.inputView.curHeight - kTabbarSafeBottomMargin];
+                [self.moreView setLt_y:self.inputView.curHeight - kTabbarSafeBottomMargin];
                 
                 [self addSubview:self.moreView];
                 

@@ -10,4 +10,8 @@
 
 @interface LTChatMoreView : UIView
 
+@property (nonatomic, strong) UIView *topLine;
+@property (nonatomic, strong) UIScrollView *scrollView;
+@property (nonatomic, strong) UIPageControl *pageControl;
+
 @end

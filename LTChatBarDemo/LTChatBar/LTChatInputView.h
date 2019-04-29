@@ -32,5 +32,9 @@
 
 @property (nonatomic, weak) id <LTChatInputViewDelegate> delegate;
 
+- (void)deleteEmoji;
+
+- (void)sendCurrentMessage;
+
 @end
 

@@ -116,9 +116,9 @@
 - (void)setFrame:(CGRect)frame {
     
     [super setFrame:frame];
-    float y = self.lt_y - CHATBAR_HEIGHT;
+    float y = self.lt_h - CHATBAR_HEIGHT;
     if (self.keyboardStatus == LTChatBarStatusVoice) {
-        y = self.lt_y - CHATBAR_HEIGHT - kTabbarSafeBottomMargin;
+        y = self.lt_h - CHATBAR_HEIGHT - kTabbarSafeBottomMargin;
     }
     if (self.voiceButton.lt_y != y) {
         

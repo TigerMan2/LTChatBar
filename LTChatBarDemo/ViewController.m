@@ -7,8 +7,12 @@
 //
 
 #import "ViewController.h"
+#import "LTChatBar/LTChatBar.h"
+#import "LTChatBar/UIView+Frame.h"
 
-@interface ViewController ()
+@interface ViewController () <LTChatBarDelegate>
+
+@property (nonatomic, strong) LTChatBar *chatBar;
 
 @end
 
@@ -16,7 +20,20 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
+    self.chatBar = [[LTChatBar alloc] initWithFrame:CGRectMake(0, self.view.lt_h - kTabbarHeight, kWIDTH, kTabbarHeight)];
+    self.chatBar.delegate = self;
+    [self.view addSubview:self.chatBar];
+    
+}
+
+#pragma mark - KInputBoxViewCtrl代理
+- (void)chatBar:(LTChatBar *)chatBar didChangeInputViewHeight:(CGFloat)height {
+    self.chatBar.frame = CGRectMake(0, self.view.lt_h - height, kWIDTH, height);
+}
+
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+    [self.view endEditing:YES];
 }
 
 

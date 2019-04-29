@@ -33,6 +33,9 @@
 #define CHATBAR_EMOJI_VIEW_HEIGHT 215
 #define CHATBAR_EMOJI_HEIGHT 141
 
+// 输入框更多视图高度
+#define CHATBAR_MORE_VIEW_HEIGHT 215
+
 #define  kTabbarSafeBottomMargin            (IS_iPhoneX ? 34.f : 0.f)
 #define  kTabbarHeight                      (IS_iPhoneX ? 83.f : 49.f)
 
@@ -76,6 +79,18 @@ typedef NS_ENUM(NSUInteger, LTChatBarRecordStatus) {
 typedef NS_ENUM(NSUInteger, LTEmojiType) {
     LTEmojiTypeNormal,
     LTEmojiTypeGif
+};
+
+typedef NS_OPTIONS(NSUInteger, LTInputViewMoreStatus) {
+    LTInputViewMoreStatusNone = 0,   // 无
+    LTInputViewMoreStatusPhoto,      // 相册选择照片
+    LTInputViewMoreStatusTakePhoto,  // 拍摄
+    LTInputViewMoreStatusMail,       // 云邮
+    LTInputViewMoreStatusCallPhone,  // 拨打电话
+    LTInputViewMoreStatusVideo,      // 视频通话
+    LTInputViewMoreStatusCard,       // 个人名片
+    LTInputViewMoreStatusLocation,   // 位置
+    LTInputViewMoreStatusFile        // 文件
 };
 
 

@@ -2,112 +2,108 @@
 //  LTChatBar.h
 //  LTChatBarDemo
 //
-//  Created by Luther on 2019/4/25.
+//  Created by Luther on 2019/5/8.
 //  Copyright © 2019 mrstock. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
-#import "LTChatBarHeader.h"
+#import "LTChatInputView.h"
+#import "LTChatEmojiView.h"
+#import "LTChatMoreView.h"
+#import "LTChatMoreItem.h"
+#import "LTChatInputItem.h"
+#import "LTChatEmojiThemeModel.h"
 
-@class LTEmojiGroup;
-@class LTChatInputView;
-@class LTChatEmojiView;
-@class LTChatMoreView;
-
-@protocol LTChatBarDelegate;
-
-@interface LTChatBar : UIView
-
-/** 输入框 */
-@property (nonatomic, strong) LTChatInputView *inputView;
-/** 表情视图 */
-@property (nonatomic, strong) LTChatEmojiView *emojiView;
-/** 更多视图 */
-@property (nonatomic, strong) LTChatMoreView *moreView;
-
-@property (nonatomic, weak) id <LTChatBarDelegate> delegate;
-
-@end
-
+@class LTChatBar;
 
 @protocol LTChatBarDelegate <NSObject>
 
 @optional
 
 /**
- 输入框高度变换
-
- @param chatBar 输入框控制器
- @param height 高度
+ *  语音状态
  */
-- (void)chatBar:(LTChatBar *)chatBar didChangeInputViewHeight:(CGFloat)height;
+- (void)chatKeyBoardDidStartRecording:(LTChatBar *)chatKeyBoard;
+- (void)chatKeyBoardDidCancelRecording:(LTChatBar *)chatKeyBoard;
+- (void)chatKeyBoardDidFinishRecoding:(LTChatBar *)chatKeyBoard;
+- (void)chatKeyBoardWillCancelRecoding:(LTChatBar *)chatKeyBoard;
+- (void)chatKeyBoardContineRecording:(LTChatBar *)chatKeyBoard;
 
 /**
- 点击添加表情按钮
-
- @param chatBar 输入框控制器
- @param addButton 添加按钮
+ *  输入状态
  */
-- (void)chatBar:(LTChatBar *)chatBar clickAddAction:(UIButton *)addButton;
+- (void)chatKeyBoardTextViewDidBeginEditing:(UITextView *)textView;
+- (void)chatKeyBoardSendText:(NSString *)text;
+- (void)chatKeyBoardTextViewDidChange:(UITextView *)textView;
 
 /**
- 选择表情组
-
- @param chatBar 输入框控制器
- @param emojiGroup 表情组
+ * 表情
  */
-- (void)chatBar:(LTChatBar *)chatBar didSelectEmojiGroup:(LTEmojiGroup *)emojiGroup;
+- (void)chatKeyBoardAddFaceSubject:(LTChatBar *)chatKeyBoard;
+- (void)chatKeyBoardSetFaceSubject:(LTChatBar *)chatKeyBoard;
 
 /**
- 点击发送按钮，发送表情
-
- @param chatBar 输入框控制器
- @param emoji  表情
+ *  更多功能
  */
-- (void)chatBar:(LTChatBar *)chatBar sendEmoji:(NSString *)emoji;
+- (void)chatKeyBoard:(LTChatBar *)chatKeyBoard didSelectMorePanelItemIndex:(NSInteger)index;
+
+@end
+
+@protocol LTChatBarDataSource <NSObject>
+
+@required
+- (NSArray<LTChatMoreItem *> *)chatKeyBoardMoreItems;
+- (NSArray<LTChatInputItem *> *)chatKeyBoardInputItems;
+- (NSArray<LTChatEmojiThemeModel *> *)chatKeyBoardEmojiSubjectItems;
+
+@end
+
+@interface LTChatBar : UIView
 
 /**
- 通过输入的文字的变化，改变输入框控制器的高度
-
- @param chatBar 输入框控制器
- @param height 高度
- @param inputStatus 输入框状态
+ *  默认是导航栏透明，或者没有导航栏
  */
-- (void)chatBar:(LTChatBar *)chatBar changeInputViewHeight:(CGFloat)height inputStatus:(LTChatBarStatus)inputStatus;
++ (instancetype)keyBoard;
 
 /**
- 发送消息
-
- @param chatBar 输入框控制器
- @param message 发送的消息
+ *  当导航栏不透明时（强制要导航栏不透明）
+ *
+ *  @param translucent 是否透明
+ *
+ *  @return keyboard对象
  */
-- (void)chatBar:(LTChatBar *)chatBar sendMessage:(NSString *)message;
++ (instancetype)keyBoardWithNavgationBarTranslucent:(BOOL)translucent;
+
 
 /**
- 状态改变
-
- @param chatBar 输入框控制器
- @param fromStatus 改变前的状态
- @param toStatus 改变后的状态
+ *  直接传入父视图的bounds过来
+ *
+ *  @param bounds 父视图的bounds，一般为控制器的view
+ *
+ *  @return keyboard对象
  */
-- (void)chatBar:(LTChatBar *)chatBar changeStatusForm:(LTChatBarStatus)fromStatus to:(LTChatBarStatus)toStatus;
++ (instancetype)keyBoardWithParentViewBounds:(CGRect)bounds;
 
-/**
- 录音状态改变
+@property (nonatomic, weak) id <LTChatBarDelegate> delegate;
+@property (nonatomic, weak) id <LTChatBarDataSource> dataSource;
+/** 设置关联的表 */
+@property (nonatomic, weak) UITableView *associateTableView;
+/** 占位文字 */
+@property (nonatomic, strong) NSString *placeHolder;
+/** 占位文字颜色 */
+@property (nonatomic, strong) UIColor *placeHolderColor;
+/** 语音是否开启，默认开启 */
+@property (nonatomic, assign) BOOL allowVoice;
+/** 表情是否开启，默认开启 */
+@property (nonatomic, assign) BOOL allowFace;
+/** 更多是否开启，默认开启 */
+@property (nonatomic, assign) BOOL allowMore;
+/** 切换bar是否开启，默认关闭 */
+@property (nonatomic, assign) BOOL allowSwitchBar;
 
- @param chatBar 输入框控制器
- @param recordStatus 录音状态
- @param voicePath 录音url
- @param recordTime 录音时长
- */
-- (void)chatBar:(LTChatBar *)chatBar recordStatus:(LTChatBarRecordStatus)recordStatus voicePath:(NSString *)voicePath recordTime:(CGFloat)recordTime;
-
-/**
- 点击更多视图里面的item
-
- @param chatBar 输入框控制器
- @param moreStatus 点击的item
- */
-- (void)chatBar:(LTChatBar *)chatBar didSelectMoreView:(LTInputViewMoreStatus)moreStatus;
+/** 弹起 */
+- (void)keyboardUp;
+/** 收回 */
+- (void)keyboardDown;
 
 @end

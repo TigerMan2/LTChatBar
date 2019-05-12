@@ -2,7 +2,7 @@
 //  LTChatBarDemoUITests.m
 //  LTChatBarDemoUITests
 //
-//  Created by Luther on 2019/4/25.
+//  Created by Luther on 2019/5/8.
 //  Copyright © 2019 mrstock. All rights reserved.
 //
 

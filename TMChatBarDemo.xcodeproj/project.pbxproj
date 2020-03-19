@@ -1,0 +1,736 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AA776D052283BFF5005F6DD4 /* TMChatInputItem.m in Sources */ = {isa = PBXBuildFile; fileRef = AA776D042283BFF5005F6DD4 /* TMChatInputItem.m */; };
+		AA776D082283C62C005F6DD4 /* TMChatEmojiBottomView.m in Sources */ = {isa = PBXBuildFile; fileRef = AA776D072283C62C005F6DD4 /* TMChatEmojiBottomView.m */; };
+		AA776D0B2283C648005F6DD4 /* TMChatEmojiPageView.m in Sources */ = {isa = PBXBuildFile; fileRef = AA776D0A2283C648005F6DD4 /* TMChatEmojiPageView.m */; };
+		AA776D0E2283C65E005F6DD4 /* TMChatEmojiThemeView.m in Sources */ = {isa = PBXBuildFile; fileRef = AA776D0D2283C65E005F6DD4 /* TMChatEmojiThemeView.m */; };
+		AA776D142283C6BB005F6DD4 /* TMChatEmojiButton.m in Sources */ = {isa = PBXBuildFile; fileRef = AA776D132283C6BB005F6DD4 /* TMChatEmojiButton.m */; };
+		AA776D172283CB67005F6DD4 /* TMChatEmojiThemeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AA776D162283CB67005F6DD4 /* TMChatEmojiThemeModel.m */; };
+		AA776D1B22840E1A005F6DD4 /* NSString+Emoji.m in Sources */ = {isa = PBXBuildFile; fileRef = AA776D1A22840E1A005F6DD4 /* NSString+Emoji.m */; };
+		AA776D1E22842596005F6DD4 /* TMChatMoreItem.m in Sources */ = {isa = PBXBuildFile; fileRef = AA776D1D22842596005F6DD4 /* TMChatMoreItem.m */; };
+		AA8B54D22285214100066C79 /* systemEmoji.plist in Resources */ = {isa = PBXBuildFile; fileRef = AA8B54CF2285214100066C79 /* systemEmoji.plist */; };
+		AA8B54D32285214100066C79 /* emotion.plist in Resources */ = {isa = PBXBuildFile; fileRef = AA8B54D02285214100066C79 /* emotion.plist */; };
+		AA8B54D42285214100066C79 /* face.plist in Resources */ = {isa = PBXBuildFile; fileRef = AA8B54D12285214100066C79 /* face.plist */; };
+		AAF73D832282742E00A85D2D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AAF73D822282742E00A85D2D /* AppDelegate.m */; };
+		AAF73D862282742E00A85D2D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AAF73D852282742E00A85D2D /* ViewController.m */; };
+		AAF73D892282742E00A85D2D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AAF73D872282742E00A85D2D /* Main.storyboard */; };
+		AAF73D8B2282742F00A85D2D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AAF73D8A2282742F00A85D2D /* Assets.xcassets */; };
+		AAF73D8E2282742F00A85D2D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AAF73D8C2282742F00A85D2D /* LaunchScreen.storyboard */; };
+		AAF73D912282742F00A85D2D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AAF73D902282742F00A85D2D /* main.m */; };
+		AAF73D9B2282742F00A85D2D /* TMChatBarDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AAF73D9A2282742F00A85D2D /* TMChatBarDemoTests.m */; };
+		AAF73DA62282742F00A85D2D /* TMChatBarDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = AAF73DA52282742F00A85D2D /* TMChatBarDemoUITests.m */; };
+		AAF73DB92282747F00A85D2D /* TMChatBar.m in Sources */ = {isa = PBXBuildFile; fileRef = AAF73DB82282747F00A85D2D /* TMChatBar.m */; };
+		AAF73DBF228277F900A85D2D /* TMChatInputView.m in Sources */ = {isa = PBXBuildFile; fileRef = AAF73DBE228277F900A85D2D /* TMChatInputView.m */; };
+		AAF73DC22282781000A85D2D /* TMChatEmojiView.m in Sources */ = {isa = PBXBuildFile; fileRef = AAF73DC12282781000A85D2D /* TMChatEmojiView.m */; };
+		AAF73DC52282782800A85D2D /* TMChatMoreView.m in Sources */ = {isa = PBXBuildFile; fileRef = AAF73DC42282782800A85D2D /* TMChatMoreView.m */; };
+		AAF73DC8228278EF00A85D2D /* TMTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = AAF73DC7228278EF00A85D2D /* TMTextView.m */; };
+		AAF73DCF2282A1AB00A85D2D /* TMRecordButton.m in Sources */ = {isa = PBXBuildFile; fileRef = AAF73DCE2282A1AB00A85D2D /* TMRecordButton.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AAF73D972282742F00A85D2D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AAF73D762282742E00A85D2D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AAF73D7D2282742E00A85D2D;
+			remoteInfo = LTChatBarDemo;
+		};
+		AAF73DA22282742F00A85D2D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AAF73D762282742E00A85D2D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AAF73D7D2282742E00A85D2D;
+			remoteInfo = LTChatBarDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		AA776D032283BFF5005F6DD4 /* TMChatInputItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TMChatInputItem.h; sourceTree = "<group>"; };
+		AA776D042283BFF5005F6DD4 /* TMChatInputItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TMChatInputItem.m; sourceTree = "<group>"; };
+		AA776D062283C62C005F6DD4 /* TMChatEmojiBottomView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TMChatEmojiBottomView.h; sourceTree = "<group>"; };
+		AA776D072283C62C005F6DD4 /* TMChatEmojiBottomView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TMChatEmojiBottomView.m; sourceTree = "<group>"; };
+		AA776D092283C648005F6DD4 /* TMChatEmojiPageView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TMChatEmojiPageView.h; sourceTree = "<group>"; };
+		AA776D0A2283C648005F6DD4 /* TMChatEmojiPageView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TMChatEmojiPageView.m; sourceTree = "<group>"; };
+		AA776D0C2283C65E005F6DD4 /* TMChatEmojiThemeView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TMChatEmojiThemeView.h; sourceTree = "<group>"; };
+		AA776D0D2283C65E005F6DD4 /* TMChatEmojiThemeView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TMChatEmojiThemeView.m; sourceTree = "<group>"; };
+		AA776D122283C6BB005F6DD4 /* TMChatEmojiButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TMChatEmojiButton.h; sourceTree = "<group>"; };
+		AA776D132283C6BB005F6DD4 /* TMChatEmojiButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TMChatEmojiButton.m; sourceTree = "<group>"; };
+		AA776D152283CB67005F6DD4 /* TMChatEmojiThemeModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TMChatEmojiThemeModel.h; sourceTree = "<group>"; };
+		AA776D162283CB67005F6DD4 /* TMChatEmojiThemeModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TMChatEmojiThemeModel.m; sourceTree = "<group>"; };
+		AA776D1922840E1A005F6DD4 /* NSString+Emoji.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+Emoji.h"; sourceTree = "<group>"; };
+		AA776D1A22840E1A005F6DD4 /* NSString+Emoji.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+Emoji.m"; sourceTree = "<group>"; };
+		AA776D1C22842596005F6DD4 /* TMChatMoreItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TMChatMoreItem.h; sourceTree = "<group>"; };
+		AA776D1D22842596005F6DD4 /* TMChatMoreItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TMChatMoreItem.m; sourceTree = "<group>"; };
+		AA8B54CF2285214100066C79 /* systemEmoji.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = systemEmoji.plist; sourceTree = "<group>"; };
+		AA8B54D02285214100066C79 /* emotion.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = emotion.plist; sourceTree = "<group>"; };
+		AA8B54D12285214100066C79 /* face.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = face.plist; sourceTree = "<group>"; };
+		AAF73D7E2282742E00A85D2D /* TMChatBarDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TMChatBarDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AAF73D812282742E00A85D2D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		AAF73D822282742E00A85D2D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		AAF73D842282742E00A85D2D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		AAF73D852282742E00A85D2D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		AAF73D882282742E00A85D2D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AAF73D8A2282742F00A85D2D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AAF73D8D2282742F00A85D2D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		AAF73D8F2282742F00A85D2D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AAF73D902282742F00A85D2D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		AAF73D962282742F00A85D2D /* TMChatBarDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TMChatBarDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AAF73D9A2282742F00A85D2D /* TMChatBarDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TMChatBarDemoTests.m; sourceTree = "<group>"; };
+		AAF73D9C2282742F00A85D2D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AAF73DA12282742F00A85D2D /* TMChatBarDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TMChatBarDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AAF73DA52282742F00A85D2D /* TMChatBarDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TMChatBarDemoUITests.m; sourceTree = "<group>"; };
+		AAF73DA72282742F00A85D2D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AAF73DB72282747F00A85D2D /* TMChatBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TMChatBar.h; sourceTree = "<group>"; };
+		AAF73DB82282747F00A85D2D /* TMChatBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TMChatBar.m; sourceTree = "<group>"; };
+		AAF73DBD228277F900A85D2D /* TMChatInputView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TMChatInputView.h; sourceTree = "<group>"; };
+		AAF73DBE228277F900A85D2D /* TMChatInputView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TMChatInputView.m; sourceTree = "<group>"; };
+		AAF73DC02282781000A85D2D /* TMChatEmojiView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TMChatEmojiView.h; sourceTree = "<group>"; };
+		AAF73DC12282781000A85D2D /* TMChatEmojiView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TMChatEmojiView.m; sourceTree = "<group>"; };
+		AAF73DC32282782800A85D2D /* TMChatMoreView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TMChatMoreView.h; sourceTree = "<group>"; };
+		AAF73DC42282782800A85D2D /* TMChatMoreView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TMChatMoreView.m; sourceTree = "<group>"; };
+		AAF73DC6228278EF00A85D2D /* TMTextView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TMTextView.h; sourceTree = "<group>"; };
+		AAF73DC7228278EF00A85D2D /* TMTextView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TMTextView.m; sourceTree = "<group>"; };
+		AAF73DCC2282832A00A85D2D /* TMChatMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TMChatMacro.h; sourceTree = "<group>"; };
+		AAF73DCD2282A1AB00A85D2D /* TMRecordButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TMRecordButton.h; sourceTree = "<group>"; };
+		AAF73DCE2282A1AB00A85D2D /* TMRecordButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TMRecordButton.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AAF73D7B2282742E00A85D2D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AAF73D932282742F00A85D2D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AAF73D9E2282742F00A85D2D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AA776D022283BFAF005F6DD4 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				AA776D152283CB67005F6DD4 /* TMChatEmojiThemeModel.h */,
+				AA776D162283CB67005F6DD4 /* TMChatEmojiThemeModel.m */,
+				AA776D032283BFF5005F6DD4 /* TMChatInputItem.h */,
+				AA776D042283BFF5005F6DD4 /* TMChatInputItem.m */,
+				AA776D1C22842596005F6DD4 /* TMChatMoreItem.h */,
+				AA776D1D22842596005F6DD4 /* TMChatMoreItem.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		AA776D1822840DFB005F6DD4 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				AA776D1922840E1A005F6DD4 /* NSString+Emoji.h */,
+				AA776D1A22840E1A005F6DD4 /* NSString+Emoji.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		AA8B54CE2285214100066C79 /* plist */ = {
+			isa = PBXGroup;
+			children = (
+				AA8B54CF2285214100066C79 /* systemEmoji.plist */,
+				AA8B54D02285214100066C79 /* emotion.plist */,
+				AA8B54D12285214100066C79 /* face.plist */,
+			);
+			path = plist;
+			sourceTree = "<group>";
+		};
+		AAF73D752282742E00A85D2D = {
+			isa = PBXGroup;
+			children = (
+				AAF73D802282742E00A85D2D /* TMChatBarDemo */,
+				AAF73D992282742F00A85D2D /* TMChatBarDemoTests */,
+				AAF73DA42282742F00A85D2D /* TMChatBarDemoUITests */,
+				AAF73D7F2282742E00A85D2D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AAF73D7F2282742E00A85D2D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AAF73D7E2282742E00A85D2D /* TMChatBarDemo.app */,
+				AAF73D962282742F00A85D2D /* TMChatBarDemoTests.xctest */,
+				AAF73DA12282742F00A85D2D /* TMChatBarDemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AAF73D802282742E00A85D2D /* TMChatBarDemo */ = {
+			isa = PBXGroup;
+			children = (
+				AAF73DB32282744A00A85D2D /* TMChatBar */,
+				AAF73D812282742E00A85D2D /* AppDelegate.h */,
+				AAF73D822282742E00A85D2D /* AppDelegate.m */,
+				AAF73D842282742E00A85D2D /* ViewController.h */,
+				AAF73D852282742E00A85D2D /* ViewController.m */,
+				AAF73D872282742E00A85D2D /* Main.storyboard */,
+				AAF73D8A2282742F00A85D2D /* Assets.xcassets */,
+				AAF73D8C2282742F00A85D2D /* LaunchScreen.storyboard */,
+				AAF73D8F2282742F00A85D2D /* Info.plist */,
+				AAF73D902282742F00A85D2D /* main.m */,
+			);
+			path = TMChatBarDemo;
+			sourceTree = "<group>";
+		};
+		AAF73D992282742F00A85D2D /* TMChatBarDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				AAF73D9A2282742F00A85D2D /* TMChatBarDemoTests.m */,
+				AAF73D9C2282742F00A85D2D /* Info.plist */,
+			);
+			path = TMChatBarDemoTests;
+			sourceTree = "<group>";
+		};
+		AAF73DA42282742F00A85D2D /* TMChatBarDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				AAF73DA52282742F00A85D2D /* TMChatBarDemoUITests.m */,
+				AAF73DA72282742F00A85D2D /* Info.plist */,
+			);
+			path = TMChatBarDemoUITests;
+			sourceTree = "<group>";
+		};
+		AAF73DB32282744A00A85D2D /* TMChatBar */ = {
+			isa = PBXGroup;
+			children = (
+				AA8B54CE2285214100066C79 /* plist */,
+				AA776D1822840DFB005F6DD4 /* Category */,
+				AA776D022283BFAF005F6DD4 /* Models */,
+				AAF73DBC2282749F00A85D2D /* TMChatInput */,
+				AAF73DBB2282749D00A85D2D /* TMChatEmoji */,
+				AAF73DBA2282749A00A85D2D /* TMChatMore */,
+				AAF73DB72282747F00A85D2D /* TMChatBar.h */,
+				AAF73DB82282747F00A85D2D /* TMChatBar.m */,
+				AAF73DCC2282832A00A85D2D /* TMChatMacro.h */,
+			);
+			path = TMChatBar;
+			sourceTree = "<group>";
+		};
+		AAF73DBA2282749A00A85D2D /* TMChatMore */ = {
+			isa = PBXGroup;
+			children = (
+				AAF73DC32282782800A85D2D /* TMChatMoreView.h */,
+				AAF73DC42282782800A85D2D /* TMChatMoreView.m */,
+			);
+			path = TMChatMore;
+			sourceTree = "<group>";
+		};
+		AAF73DBB2282749D00A85D2D /* TMChatEmoji */ = {
+			isa = PBXGroup;
+			children = (
+				AAF73DC02282781000A85D2D /* TMChatEmojiView.h */,
+				AAF73DC12282781000A85D2D /* TMChatEmojiView.m */,
+				AA776D062283C62C005F6DD4 /* TMChatEmojiBottomView.h */,
+				AA776D072283C62C005F6DD4 /* TMChatEmojiBottomView.m */,
+				AA776D092283C648005F6DD4 /* TMChatEmojiPageView.h */,
+				AA776D0A2283C648005F6DD4 /* TMChatEmojiPageView.m */,
+				AA776D0C2283C65E005F6DD4 /* TMChatEmojiThemeView.h */,
+				AA776D0D2283C65E005F6DD4 /* TMChatEmojiThemeView.m */,
+				AA776D122283C6BB005F6DD4 /* TMChatEmojiButton.h */,
+				AA776D132283C6BB005F6DD4 /* TMChatEmojiButton.m */,
+			);
+			path = TMChatEmoji;
+			sourceTree = "<group>";
+		};
+		AAF73DBC2282749F00A85D2D /* TMChatInput */ = {
+			isa = PBXGroup;
+			children = (
+				AAF73DBD228277F900A85D2D /* TMChatInputView.h */,
+				AAF73DBE228277F900A85D2D /* TMChatInputView.m */,
+				AAF73DC6228278EF00A85D2D /* TMTextView.h */,
+				AAF73DC7228278EF00A85D2D /* TMTextView.m */,
+				AAF73DCD2282A1AB00A85D2D /* TMRecordButton.h */,
+				AAF73DCE2282A1AB00A85D2D /* TMRecordButton.m */,
+			);
+			path = TMChatInput;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AAF73D7D2282742E00A85D2D /* TMChatBarDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AAF73DAA2282742F00A85D2D /* Build configuration list for PBXNativeTarget "TMChatBarDemo" */;
+			buildPhases = (
+				AAF73D7A2282742E00A85D2D /* Sources */,
+				AAF73D7B2282742E00A85D2D /* Frameworks */,
+				AAF73D7C2282742E00A85D2D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TMChatBarDemo;
+			productName = LTChatBarDemo;
+			productReference = AAF73D7E2282742E00A85D2D /* TMChatBarDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AAF73D952282742F00A85D2D /* TMChatBarDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AAF73DAD2282742F00A85D2D /* Build configuration list for PBXNativeTarget "TMChatBarDemoTests" */;
+			buildPhases = (
+				AAF73D922282742F00A85D2D /* Sources */,
+				AAF73D932282742F00A85D2D /* Frameworks */,
+				AAF73D942282742F00A85D2D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AAF73D982282742F00A85D2D /* PBXTargetDependency */,
+			);
+			name = TMChatBarDemoTests;
+			productName = LTChatBarDemoTests;
+			productReference = AAF73D962282742F00A85D2D /* TMChatBarDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		AAF73DA02282742F00A85D2D /* TMChatBarDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AAF73DB02282742F00A85D2D /* Build configuration list for PBXNativeTarget "TMChatBarDemoUITests" */;
+			buildPhases = (
+				AAF73D9D2282742F00A85D2D /* Sources */,
+				AAF73D9E2282742F00A85D2D /* Frameworks */,
+				AAF73D9F2282742F00A85D2D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AAF73DA32282742F00A85D2D /* PBXTargetDependency */,
+			);
+			name = TMChatBarDemoUITests;
+			productName = LTChatBarDemoUITests;
+			productReference = AAF73DA12282742F00A85D2D /* TMChatBarDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AAF73D762282742E00A85D2D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = mrstock;
+				TargetAttributes = {
+					AAF73D7D2282742E00A85D2D = {
+						CreatedOnToolsVersion = 10.2;
+					};
+					AAF73D952282742F00A85D2D = {
+						CreatedOnToolsVersion = 10.2;
+						TestTargetID = AAF73D7D2282742E00A85D2D;
+					};
+					AAF73DA02282742F00A85D2D = {
+						CreatedOnToolsVersion = 10.2;
+						TestTargetID = AAF73D7D2282742E00A85D2D;
+					};
+				};
+			};
+			buildConfigurationList = AAF73D792282742E00A85D2D /* Build configuration list for PBXProject "TMChatBarDemo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AAF73D752282742E00A85D2D;
+			productRefGroup = AAF73D7F2282742E00A85D2D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AAF73D7D2282742E00A85D2D /* TMChatBarDemo */,
+				AAF73D952282742F00A85D2D /* TMChatBarDemoTests */,
+				AAF73DA02282742F00A85D2D /* TMChatBarDemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AAF73D7C2282742E00A85D2D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA8B54D22285214100066C79 /* systemEmoji.plist in Resources */,
+				AAF73D8E2282742F00A85D2D /* LaunchScreen.storyboard in Resources */,
+				AA8B54D32285214100066C79 /* emotion.plist in Resources */,
+				AAF73D8B2282742F00A85D2D /* Assets.xcassets in Resources */,
+				AAF73D892282742E00A85D2D /* Main.storyboard in Resources */,
+				AA8B54D42285214100066C79 /* face.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AAF73D942282742F00A85D2D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AAF73D9F2282742F00A85D2D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AAF73D7A2282742E00A85D2D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA776D142283C6BB005F6DD4 /* TMChatEmojiButton.m in Sources */,
+				AA776D0B2283C648005F6DD4 /* TMChatEmojiPageView.m in Sources */,
+				AA776D1B22840E1A005F6DD4 /* NSString+Emoji.m in Sources */,
+				AAF73D862282742E00A85D2D /* ViewController.m in Sources */,
+				AAF73DC22282781000A85D2D /* TMChatEmojiView.m in Sources */,
+				AAF73DBF228277F900A85D2D /* TMChatInputView.m in Sources */,
+				AA776D172283CB67005F6DD4 /* TMChatEmojiThemeModel.m in Sources */,
+				AA776D0E2283C65E005F6DD4 /* TMChatEmojiThemeView.m in Sources */,
+				AAF73D912282742F00A85D2D /* main.m in Sources */,
+				AAF73D832282742E00A85D2D /* AppDelegate.m in Sources */,
+				AA776D1E22842596005F6DD4 /* TMChatMoreItem.m in Sources */,
+				AAF73DB92282747F00A85D2D /* TMChatBar.m in Sources */,
+				AAF73DC52282782800A85D2D /* TMChatMoreView.m in Sources */,
+				AA776D082283C62C005F6DD4 /* TMChatEmojiBottomView.m in Sources */,
+				AAF73DCF2282A1AB00A85D2D /* TMRecordButton.m in Sources */,
+				AAF73DC8228278EF00A85D2D /* TMTextView.m in Sources */,
+				AA776D052283BFF5005F6DD4 /* TMChatInputItem.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AAF73D922282742F00A85D2D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AAF73D9B2282742F00A85D2D /* TMChatBarDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AAF73D9D2282742F00A85D2D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AAF73DA62282742F00A85D2D /* TMChatBarDemoUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AAF73D982282742F00A85D2D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AAF73D7D2282742E00A85D2D /* TMChatBarDemo */;
+			targetProxy = AAF73D972282742F00A85D2D /* PBXContainerItemProxy */;
+		};
+		AAF73DA32282742F00A85D2D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AAF73D7D2282742E00A85D2D /* TMChatBarDemo */;
+			targetProxy = AAF73DA22282742F00A85D2D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		AAF73D872282742E00A85D2D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AAF73D882282742E00A85D2D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		AAF73D8C2282742F00A85D2D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AAF73D8D2282742F00A85D2D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AAF73DA82282742F00A85D2D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		AAF73DA92282742F00A85D2D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AAF73DAB2282742F00A85D2D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X4634493CA;
+				INFOPLIST_FILE = TMChatBarDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mrstock.LTChatBarDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AAF73DAC2282742F00A85D2D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X4634493CA;
+				INFOPLIST_FILE = TMChatBarDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mrstock.LTChatBarDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		AAF73DAE2282742F00A85D2D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = LTChatBarDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mrstock.LTChatBarDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TMChatBarDemo.app/TMChatBarDemo";
+			};
+			name = Debug;
+		};
+		AAF73DAF2282742F00A85D2D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = LTChatBarDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mrstock.LTChatBarDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TMChatBarDemo.app/TMChatBarDemo";
+			};
+			name = Release;
+		};
+		AAF73DB12282742F00A85D2D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = LTChatBarDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mrstock.LTChatBarDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = LTChatBarDemo;
+			};
+			name = Debug;
+		};
+		AAF73DB22282742F00A85D2D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = LTChatBarDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mrstock.LTChatBarDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = LTChatBarDemo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AAF73D792282742E00A85D2D /* Build configuration list for PBXProject "TMChatBarDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AAF73DA82282742F00A85D2D /* Debug */,
+				AAF73DA92282742F00A85D2D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AAF73DAA2282742F00A85D2D /* Build configuration list for PBXNativeTarget "TMChatBarDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AAF73DAB2282742F00A85D2D /* Debug */,
+				AAF73DAC2282742F00A85D2D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AAF73DAD2282742F00A85D2D /* Build configuration list for PBXNativeTarget "TMChatBarDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AAF73DAE2282742F00A85D2D /* Debug */,
+				AAF73DAF2282742F00A85D2D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AAF73DB02282742F00A85D2D /* Build configuration list for PBXNativeTarget "TMChatBarDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AAF73DB12282742F00A85D2D /* Debug */,
+				AAF73DB22282742F00A85D2D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AAF73D762282742E00A85D2D /* Project object */;
+}
